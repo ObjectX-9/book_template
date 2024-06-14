@@ -1,0 +1,12 @@
+name: ci-tuya-components-styled-docs
+
+on:
+  workflow_dispatch:
+
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Saber2pr/gh-pages-modules@v0.0.8
+        with:
+          url: https://github.com/tuya/tuya-components-styled-docs.git
