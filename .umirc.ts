@@ -6,12 +6,8 @@ const isProd =
 export default defineConfig({
   ssr: isProd ? {} : false,
   exportStatic: isProd ? {} : false,
-  title: 'Tuya Design',
+  title: 'ObjectX电子书模版',
   mode: 'site',
-  // locales: [
-  //   ['zh', '中文'],
-  //   ['en', 'English'],
-  // ],
   favicon:
     'https://imagesd.tuyaus.com/tyims/rms-static/c118f100-7bd1-11ea-be8a-afe9921c3d8a-1586595140625.ico?tyName=tuya_favicon.ico',
   extraBabelPlugins: [
@@ -25,13 +21,13 @@ export default defineConfig({
     ],
   ],
   theme: {
-    '@primary-color': '#ff4800',
+    '@primary-color': '#61B3A5',
   },
   logo:
     'https://imagesd.tuyaus.com/tyims/rms-static/c118f100-7bd1-11ea-be8a-afe9921c3d8a-1586595140625.ico?tyName=tuya_favicon.ico',
   themeConfig: {
     repository: {
-      url: 'https://github.com/tuya/tuya-panel-kit-docs',
+      url: '',
       branch: 'main',
       platform: 'github',
     },
