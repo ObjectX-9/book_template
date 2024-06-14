@@ -47,11 +47,9 @@ export default defineConfig({
     passivePreview: true,
   },
   hash: isProd,
-  // base: isProd ? '/tuya-panel-kit-docs' : '/', // router base
-  publicPath: isProd
-    ? //     ? '//cdn.jsdelivr.net/gh/tuya/tuya-panel-kit-docs@gh-pages/'
-      '/'
-    : '/',
+  // 这里用你的仓库名
+  base: isProd ? '/book_template' : '/', // router base
+  publicPath: isProd ? '/book_template' : '/', // router base
   headScripts: [
     {
       async: true,
