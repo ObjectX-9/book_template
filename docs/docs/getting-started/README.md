@@ -1,6 +1,6 @@
 ---
 nav:
-  title: 文档
+  title: 工程化实践指南
 group:
   title: 开发指南
 title: 快速上手

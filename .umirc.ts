@@ -6,10 +6,9 @@ const isProd =
 export default defineConfig({
   ssr: isProd ? {} : false,
   exportStatic: isProd ? {} : false,
-  title: 'ObjectX电子书模版',
+  title: 'ObjectX前端工程化实践',
   mode: 'site',
-  favicon:
-    'https://imagesd.tuyaus.com/tyims/rms-static/c118f100-7bd1-11ea-be8a-afe9921c3d8a-1586595140625.ico?tyName=tuya_favicon.ico',
+  favicon: '/objectX.png',
   extraBabelPlugins: [
     [
       'import',
@@ -21,10 +20,9 @@ export default defineConfig({
     ],
   ],
   theme: {
-    '@primary-color': '#61B3A5',
+    '@primary-color': '#fff',
   },
-  logo:
-    'https://imagesd.tuyaus.com/tyims/rms-static/c118f100-7bd1-11ea-be8a-afe9921c3d8a-1586595140625.ico?tyName=tuya_favicon.ico',
+  logo: '/objectX.png',
   themeConfig: {
     repository: {
       url: '',

@@ -1,14 +1,14 @@
 ---
-title: ObjectX电子书模板
+title: ObjectX前端工程化实践指南
 hero:
-  title: ObjectX电子书模板
-  desc: 高效、统一、可视化
-  background: https://panel-docs.tuyacn.com/background.png
-  image: https://images.tuyacn.com/rms-static/d9ecd060-e2f6-11eb-bb1c-dd1a7461f245-1626083541094.svg?tyName=20210712tuya-logo-2x.svg
+  title: 前端工程化实践指南
+  desc: 前端工程化开源电子书📚，项目搭建、代码格式化、代码质量、项目打包、项目自动化一网打尽
+  background: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyPCaqtKIDy8rN08fghsLhKKIL00B5JY4LbpVNLhQRYSVfxOquhQU1cUVBqMCBrMPbFbU&usqp=CAU
+  image: /objectX.png
   actions:
-    - link: https://developer.tuya.com/cn/miniapp/
-      text: 智能小程序
-      hot: true
     - link: /docs
-      text: 开发组件
+      text: 快速开始
+      hot: true
+    - link: https://github.com/ObjectX-9/front_end_engineer_book
+      text: GitHub
 ---
