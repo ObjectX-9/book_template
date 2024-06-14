@@ -2,7 +2,7 @@ name: deploy book
 on:
   push:
     branches:
-      - master # if any push happens on branch `main`, run this workflow. You could also add `paths` to detect changes in specific folder
+      - master # if any push happens on branch `master`, run this workflow. You could also add `paths` to detect changes in specific folder
 
 jobs:
   build-and-deploy:
@@ -11,10 +11,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.3.1
 
+      - name: Setup Node.js 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
       - name: Install and Build
         run: |
           yarn install
           yarn run build
+
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v3
@@ -25,4 +31,4 @@ jobs:
           keep_history: false
           jekyll: false
         env:
-          GITHUB_TOKEN: ${{ secrets.DELOY_BOOK }}
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_BOOK }}
